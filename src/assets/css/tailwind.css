@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-r from-purple-200 via-blue-100 to-pink-900 font-montserratAlternates;
+  }
+  .navlink {
+    @apply flex items-center  mx-6 mt-[0.4rem]  p-3 w-[14.5rem]  rounded-l-full
+       hover:bg-gradient-to-r from-red-200 via-red-100 to-pink-900 hover:border-r-[3px] border-red-400 text-yellow-800
+        duration-300;
+  }
+}
+
+@font-face {
+  font-family: Montserrat-Black;
+  src: url("../fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: MontserratAlternates-Medium;
+  src: url("../fonts/MontserratAlternates-Medium.ttf");
+}
